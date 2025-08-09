@@ -1,7 +1,8 @@
 <script lang="ts">
-	import '../app.css';
 	import favicon from '$lib/assets/favicon.png';
+	import Ga from '$lib/components/ga.svelte';
 	import { CANONICAL_URL } from '$lib/constants';
+	import '../app.css';
 
 	let { children } = $props();
 </script>
@@ -26,5 +27,7 @@
 	<meta property="og:type" content="website" />
 	<link rel="icon" href={favicon} />
 </svelte:head>
+
+<Ga id="G-K3SVNH15H9" />
 
 {@render children?.()}
