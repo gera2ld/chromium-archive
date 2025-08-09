@@ -14,10 +14,14 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-      - run: bun run build-data.ts
-      - run: bun run build-page.ts
+      - name: Build
+        run: |
+          bun i
+          bun run src/scripts/build-data.ts
+          bun run build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: build
+          clean: true
           single-commit: true
