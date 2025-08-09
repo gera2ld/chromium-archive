@@ -1,3 +1,5 @@
+
+
 <script lang="ts">
 	import { platforms } from '$lib/constants';
 	import type { IPlatform } from '$lib/types';
@@ -229,5 +231,21 @@
 				</table>
 			</div>
 		</main>
+
+		<section id="about" class="my-10">
+			<div class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+				<h2 class="text-2xl font-bold text-gray-900">About Chromium</h2>
+				<p class="mt-4 text-gray-600">
+					Chromium is the open-source web browser project from which Google Chrome draws its source
+					code. It is designed to be a safer, faster, and more stable way for all Internet users
+					to experience the web.
+				</p>
+				<p class="mt-4 text-gray-600">
+					This archive provides access to historical builds of Chromium. This can be useful for
+					developers and testers who need to test their websites or applications on older versions
+					of the browser.
+				</p>
+			</div>
+		</section>
 	</div>
 </div>
